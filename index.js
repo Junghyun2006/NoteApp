@@ -64,16 +64,11 @@ noteContainer.addEventListener('click', (e) => {
 })
 
 swapNotes = (note1, note2) => {
-
     const temp = document.createElement("li");
     note1.parentNode.insertBefore(temp, note1);
-
     note2.parentNode.insertBefore(note1, note2)
-
     temp.parentNode.insertBefore(note2, temp);
-
     temp.parentNode.removeChild(temp)
-
     note1.id = "";
     note2.id = "";
 } 
